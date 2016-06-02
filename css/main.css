@@ -13,7 +13,7 @@ header, footer, section{ width:100%;  overflow:hidden; margin-top:0; height:auto
 .content{ position:relative; margin:auto; }
 .column{  width:50%; height:100%;  padding:30px 0 90px 0;  }
 /**** texts ****/
-a{ text-decoration:none; color:#fff; }
+a{ text-decoration:none; }
 p{ line-height:35px; letter-spacing:0px;}
 h1{ font-weight:500;   font-size:50px; margin-top:25px;letter-spacing:-2px;}
 h2{  padding-top:50px; width:65%; margin:auto; font-weight:300;}
@@ -41,6 +41,7 @@ span{  font-weight:500; }
 .text-justify { text-align: justify; }
 /**** clear ****/
 .clear{ clear: both; }
+li{list-style: none;}
 
 /**** index page* ***/
 	/**** header index ****/
@@ -62,7 +63,8 @@ span{  font-weight:500; }
 	.right-sweep:hover, .right-sweep:focus, .right-sweep:active {} 
 	
 	/*section footer*/
-	footer{ background:#000;  }
+	footer{ background:#000; max-height: 200px; text-align: center; }
+	footer .container{padding: 0; min-height: 30px}
 	footer .container a:hover{ color:#FD5451; }
 	
 	
