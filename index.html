@@ -23,8 +23,9 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="menu/jquery.slicknav.js"></script>
 	<!-- CSS for app -->
-    <link rel="stylesheet" href="menu/dist/slicknav.css">
+    <link rel="stylesheet" href="menu/slicknav.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css" > 
 	
     <!--[if lt IE 9]>
@@ -47,17 +48,25 @@
 		</div>
 	</div>
 	<menu type="context toolbar" id="menuPrincipal">
-		<li><a href="#" id="menuBio">Bio</a></li>
-		<li><a href="#" id="menuEstudios">Estudios</a></li>
-		<li><a href="#" id="menuHabilidades">Habilidades</a></li>
-		<li><a href="#" id="menuContacto">Contacto</a></li>
-		<li><a href="#" id="menuExtra">Extra</a></li>
-		<li><a href="#" id="menuTop">Top</a></li>
+		<ul id="menu">
+			<li><a href="#bio" id="menuBio">Bio</a></li>
+			<li><a href="#estudios" id="menuEstudios">Estudios</a></li>
+			<li><a href="#habilidades" id="menuHabilidades">Habilidades</a></li>
+			<li><a href="#contacto" id="menuContacto">Contacto</a></li>
+			<li><a href="#extra" id="menuExtra">Extra</a></li>
+			<li><a href="#header" id="menuTop">Top</a></li>
+		</ul>
 	</menu>
 	<figure class="abajo">
 		<a href="#" class="botonAbajo" id="abajoMenu"><img src="img/abajo.png"></a>
 	</figure>
 </header>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>
 
 <!-- 2 section owitswork -->
 <section class="bio" id="bio">
@@ -68,7 +77,7 @@
 				Nací en la ciudad más bella de México; Pátzcuaro, Michoacán, un 12 de septiembre de 1987. 
 				Amo mi ciudad desde el primer momento de mi vida, y ¿Cómo no hacerlo? si el nombre Pátzcuaro 
 				habla por sí mismo, "La puerta al cielo" en idioma Purepecha
-				<br> <br> Además de amar mi cidad, amo también la música, de todo tipo, sin excepciones... 
+				<br> <br> Además de amar mi ciudad, amo también la música, de todo tipo, sin excepciones... 
 				¡Ah sí! Y también soy ingeniero en computación, programador y orgulloso de serlo.
 				<br><br>
 			</p>
@@ -142,7 +151,7 @@
 	<div class="container">
 		
 		<div class="left">
-			<a class="twitter-timeline"  href="https://twitter.com/adrianVaNa" data-widget-id="738440986288742400">Tweets por el @adrianVaNa.</a>
+			<a class="twitter-timeline"  href="https://twitter.com/adrianVaNa" data-widget-id="738440986288742400">Tweets de @adrianVaNa.</a>
 	        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
         <div class="right">
