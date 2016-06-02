@@ -45,9 +45,10 @@ li{list-style: none; display: inline;}
 	header img{max-width: 250px;}
 	header menu	{position: absolute; bottom: 150px; height:25px; width:80%; font-weight:600;  padding:0 10%; margin-top:0;}
 	.fixed{position: fixed; top: 0; background-color: black; transition: 2s; z-index: 999; height: 50px;}
-	#menuPrincipal li{display: inline-block; color: white; position: relative; top: 12px; width: 16%; text-align: center;}
+	#menuPrincipal li{display: inline-block; color: white; position: relative; width: 16%; text-align: center;}
 	#menuPrincipal li:hover{background-color: rgba(255,255,255,0.1);}
 	#menuPrincipal li a{color: white;}
+	.slicknav_menu{display: none}
 	
 	.estudios{background: url(../img/edificio_fie.jpg); background-attachment: fixed; background-size:cover;}
 
@@ -72,7 +73,7 @@ li{list-style: none; display: inline;}
 	menu{display: none;}
 	header figure{text-align: center;}
 
-	.slicknav_menu{position: fixed; top: 0; z-index: 999; width: 100%;}
+	.slicknav_menu{display:block; position: fixed; top: 0; z-index: 999; width: 100%;}
 	.slicknav_menu a{font-weight: 600;}
 
 	.right,.left{width: 100%;}
