@@ -22,6 +22,7 @@
 	<!--Link script-->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 	<!-- CSS for app -->
     <link rel="stylesheet" href="menu/dist/slicknav.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css" > 
@@ -36,100 +37,149 @@
 	<div class="container">
 		<br>
 		<div class="left">
-			<img src="img/adrianvazquez.jpg" alt="Adrián Vázquez Navarrete">
-
+			<figure class="imgborder">
+				<img src="img/adrianvazquez.jpg" alt="Adrián Vázquez Navarrete">
+			</figure>
 		</div>
 		<div class="right">
 			<h1>Adrián Vázquez Navarrete</h1>
 			<p>Desarrollador | Developer</p>
 		</div>
 	</div>
-	<menu type="context toolbar">
-		<li>Bio</li>
-		<li>Estudios</li>
-		<li>Habilidades</li>
+	<menu type="context toolbar" id="menuPrincipal">
+		<li><a href="#" id="menuBio">Bio</a></li>
+		<li><a href="#" id="menuEstudios">Estudios</a></li>
+		<li><a href="#" id="menuHabilidades">Habilidades</a></li>
+		<li><a href="#" id="menuContacto">Contacto</a></li>
+		<li><a href="#" id="menuExtra">Extra</a></li>
+		<li><a href="#" id="menuTop">Top</a></li>
 	</menu>
+	<figure class="abajo">
+		<a href="#" class="botonAbajo" id="abajoMenu"><img src="img/abajo.png"></a>
+	</figure>
 </header>
 
 <!-- 2 section owitswork -->
-<section class="servicios" id="servicios">
+<section class="bio" id="bio">
 	<div class="container">
-		<div class="row left" >
-			<div class="content">
-				<h1>Bio</h1>
-				<p>
-					Nací en la ciudad más bella de México; Pátzcuaro, Michoacán, un 12 de septiembre de 1987. Amo mi ciudad desde el primer momento de mi vida, y ¿Cómo no hacerlo? si el nombre Pátzcuaro habla por sí mismo, "La puerta al cielo" en idioma Purepecha<br> <br> Además de amar mi cidad, amo también la música, de todo tipo, sin excepciones... ¡Ah sí! Y también soy ingeniero en computación, programador y orgulloso de serlo.
-				</p>
-				<a href="#" class="btn btn-howitworks">
-					Download
-				</a>
-			</div>
+		<div class="left" >
+			<h1>Bio</h1>
+			<p>
+				Nací en la ciudad más bella de México; Pátzcuaro, Michoacán, un 12 de septiembre de 1987. 
+				Amo mi ciudad desde el primer momento de mi vida, y ¿Cómo no hacerlo? si el nombre Pátzcuaro 
+				habla por sí mismo, "La puerta al cielo" en idioma Purepecha
+				<br> <br> Además de amar mi cidad, amo también la música, de todo tipo, sin excepciones... 
+				¡Ah sí! Y también soy ingeniero en computación, programador y orgulloso de serlo.
+				<br><br>
+			</p>
+		</div>
+		<div class="right">
+			<figure>
+				<img src="img/bio.jpg" class="shadow">
+			</figure>
 		</div>
 		
 	</div>
+	<figure class="abajo">
+		<a href="#" class="botonAbajo" id="abajoBio"><img src="img/abajo.png"></a>
+	</figure>
 </section>
 <!-- end brief section -->
 
-<section class="download" id="download">
+<section class="estudios" id="estudios">
 	<div class="container">
-		<div class="row left">
+		<div class="left">
+			<figure class="text-center">
+				<img src="img/umsnh.jpg" alt="Universidad Michoacana">
+			</figure>
+			<figure class="text-center">
+				<img src="img/fielogo.png" alt="FIE">
+			</figure>
 			
 		</div>
-		<div class="row right">
+		<div class="right">
 			<h1>Estudios</h1>
+			<p><b>Ingeniería en Computación</b></p>
 			<p>Universidad Michoacana de San Nicolás de Hidalgo</p>
 			<p>Facultad de Ingeniería Eléctrica</p>
 		</div>
 	</div>
+	<figure class="abajo">
+		<a href="#" class="botonAbajo" id="abajoEstudios"><img src="img/abajo.png"></a>
+	</figure>
 </section>
 
-<section class="benefits" id="benefits">
+<section class="habilidades" id="habilidades">
 	<div class="container">
-		<div class="row left">
+		<div class="left">
 			<div class="content">
-				<h1>Habilidades</h1>
+				<h1>Conocimientos</h1>
 				<p>
-					HTML, Javascript, Jquery, MySQL, PHP, Java, Python, C...
+					HTML, CSS, Javascript, Jquery, MySQL, PHP, Java, Python, C, entre otros lenguajes de programación...
 				</p>
+
 			</div>
 		</div>
-		<div class="row right">
+		<div class="right">
 			<div class="content">
-				
+				<figure>
+					<img src="img/lenguajes.png" alt="lenguajes de programación">
+				</figure>
 			</div>
 		</div>
+		<h1>Habilidades</h1>
+		<p>
+			Lógica, Análisis de algoritmos, inteligencia artificial, Paradigmas de programación, Teoría de la computación, 
+			Visión computacional, Bases de datos, Programación Web, Programación orientada a objetos, Redes de computadoras, entre otras...
+		</p>
 	</div>
+	<figure class="abajo">
+		<a href="#" class="botonAbajo" id="abajoHabilidades"><img src="img/abajo.png"></a>
+	</figure>
 </section>
 
-<section class="benefits" id="benefits">
+<section class="contacto" id="contacto">
 	<div class="container">
-		<div class="row left">
-			<div class="content">
-				<h1>Contacto</h1>
-				<p>Redes:</p>
-				<a href="https://www.facebook.com/adrian.v.navarrete">FaceLogo</a>
-			</div>
-		</div>
-		<div class="row right">
-			<div class="content">
-				
-			</div>
-		</div>
-	</div>
+		
+		<div class="left">
+			<a class="twitter-timeline"  href="https://twitter.com/adrianVaNa" data-widget-id="738440986288742400">Tweets por el @adrianVaNa.</a>
+	        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+        <div class="right">
+        	<h1 class="text-center">Contacto</h1>
+        	<ul class="iconoSocial">
+        		<li>
+        			<a href="https://www.facebook.com/adrian.v.navarrete"><img src="img/fb.png" alt="Facebook Logo"></a>
+        		</li>
+        		<li>
+        			<a href="https://mx.linkedin.com/in/adrián-vázquez-navarrete-a347b4117"><img src="img/in.png" alt="Linkedin"></a>
+        		</li>
+        		<li>
+        			<a href="https://plus.google.com/u/0/105241575288810216221/posts"><img src="img/gp.png" alt="Google plus"></a>
+        		</li>
+        		<li>
+        			<a href="mailto:adrian.v.navarrete@gmail.com?Subject=Contacto%20web" target="_top"><img src="img/mail.png" alt="Mail"></a>
+        		</li>
+        	</ul>
+        	<p class="text-center">Buscame en cualquiera de mis redes sociales, o por correo.</p>
+        </div>
+    </div>
+    <figure class="abajo">
+		<a href="#" class="botonAbajo" id="abajoContacto"><img src="img/abajo.png"></a>
+	</figure>
 </section>
 
-<section class="benefits" id="benefits">
+<section class="extra" id="extra">
 	<div class="container">
-		<div class="row left">
+		<h1>Extra</h1>
+		<div class="left">
 			<div class="content">
-				<h1>Extra</h1>
-				<p>Aquí una pequeña muestra de mi trabajo fuera de la computación</p>
-				<a href="https://www.facebook.com/adrian.v.navarrete">FaceLogo</a>
+				<p>Aquí una pequeña muestra de mi trabajo en la música</p>
 			</div>
 		</div>
-		<div class="row right">
+		<div class="right">
 			<div class="content">
-				
+				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/138302678&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 			</div>
 		</div>
 	</div>
