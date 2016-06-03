@@ -71,14 +71,15 @@ li{list-style: none; display: inline;}
 	/*general*/
 	header,section{min-height: 800px;}
 	menu{display: none;}
-	header figure{text-align: center;}
+	figure{text-align: center;}
 
 	.slicknav_menu{display:block; position: fixed; top: 0; z-index: 999; width: 100%;}
 	.slicknav_menu a{font-weight: 600;}
 
 	.right,.left{width: 100%;}
 
-	.bio,.estudios{min-height: 1000px}
+	.bio{min-height: 1050px;}
+	.estudios{min-height: 1000px}
 	.habilidades{min-height: 900px;}
 
 	.contacto{min-height: 850px;}
