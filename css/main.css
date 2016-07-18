@@ -86,6 +86,7 @@ li{list-style: none; display: inline;}
 
 	.bio{min-height: 1050px;}
 	.estudios{min-height: 1000px}
+	.estudios .left img{max-width: 100%;}
 	.habilidades{min-height: 900px;}
 
 	.contacto{min-height: 850px;}
@@ -102,4 +103,5 @@ li{list-style: none; display: inline;}
 	header img{zoom:50%;}
 
 	#habilidades h1{zoom:70%;}
+
 }
