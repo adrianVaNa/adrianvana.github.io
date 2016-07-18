@@ -51,7 +51,9 @@ li{list-style: none; display: inline;}
 	#menuPrincipal li a{color: white;}
 	.slicknav_menu{display: none}
 	
-	.estudios{background: url(../img/edificio_fie.jpg); background-attachment: fixed; background-size:cover;}
+	.estudios{background: url(../img/edificio_fie.jpg); background-attachment: fixed; background-size:cover; color:#ffdae2;}
+	.estudios a{font-weight: 700}
+	.estudios img{border-radius: 50px;}
 
 	.contacto{background-color: #f5f5f5;}
 	.iconoSocial{text-align: center;}
